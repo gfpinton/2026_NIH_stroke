@@ -1,0 +1,220 @@
+\documentclass[fleqn,11pt,letterpaper]{article}
+\usepackage{float}
+\usepackage[sort&compress,numbers]{natbib}
+%\usepackage[authoryear]{natbib}
+\usepackage{multicol}
+\usepackage{graphicx,textcomp,colortbl,booktabs,enumerate,wrapfig}
+\usepackage{indentfirst,ulem,tabularx,color,psfrag,hyperref,hypernat}
+\usepackage[leftbars]{changebar}
+\usepackage[rightcaption]{sidecap}
+\usepackage[font=small,labelfont=bf]{caption}
+%\ushttps://www.overleaf.com/project/62140704a7b7fc278e7cc8ecepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{wrapfig}
+\usepackage{colortbl}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage[compact]{titlesec}
+\usepackage[abs]{overpic}   % latex on top of a picture
+%\usepackage{draftwatermark}
+%\SetWatermarkText{Confidential}
+%\SetWatermarkScale{5}
+\usepackage{tabu}
+\usepackage{setspace}
+\usepackage{rotating}
+\usepackage{marvosym}
+\usepackage{pgfgantt}
+%\usepackage{pst-text}
+%\DeclareFixedFont{\RM}{T1}{ptm}{b}{n}{2cm}
+\usepackage{contour}
+\usepackage{turnstile}
+\usepackage{tikz}
+\usepackage{enumitem}
+% \usepackage{floatrow}
+\usepackage{sidecap}
+\usepackage{placeins}
+\usepackage[font=scriptsize]{caption} 
+\usepackage{color,soul}
+\renewcommand{\refname}{\hspace{80mm} \large REFERENCES}
+\newcommand{\RevA}[1]{{\color{black}{#1}}}
+\newcommand{\RevB}[1]{{\color{black}{#1}}}
+\newcommand{\hlc}[2][yellow]{ {\sethlcolor{#1} \hl{#2}} }
+\usepackage[abs]{overpic}     % latex on top of a picture
+
+
+
+\newcommand{\bea}{\begin{eqnarray}}
+\newcommand{\be}{\begin{equation}}
+\newcommand{\eea}{\end{eqnarray}}
+\newcommand{\ee}{\end{equation}}
+
+
+\newcommand{\bfmB}{{\mbox{\boldmath{$B$}}}}
+\newcommand{\bfmC}{{\mbox{\boldmath{$C$}}}}
+\newcommand{\bfmD}{{\mbox{\boldmath{$D$}}}}
+\newcommand{\bfmE}{{\mbox{\boldmath{$E$}}}}
+\newcommand{\bfmF}{{\mbox{\boldmath{$F$}}}}
+\newcommand{\bfmG}{{\mbox{\boldmath{$G$}}}}
+\newcommand{\bfmH}{{\mbox{\boldmath{$H$}}}}
+\newcommand{\bfmI}{{\mbox{\boldmath{$I$}}}}
+\newcommand{\bfmJ}{{\mbox{\boldmath{$J$}}}}
+\newcommand{\bfmK}{{\mbox{\boldmath{$K$}}}}
+\newcommand{\bfmL}{{\mbox{\boldmath{$L$}}}}
+\newcommand{\bfmM}{{\mbox{\boldmath{$M$}}}}
+\newcommand{\bfmN}{{\mbox{\boldmath{$N$}}}}
+\newcommand{\bfmO}{{\mbox{\boldmath{$O$}}}}
+\newcommand{\bfmP}{{\mbox{\boldmath{$P$}}}}
+\newcommand{\bfmQ}{{\mbox{\boldmath{$Q$}}}}
+\newcommand{\bfmR}{{\mbox{\boldmath{$R$}}}}
+\newcommand{\bfmS}{{\mbox{\boldmath{$S$}}}}
+\newcommand{\bfmT}{{\mbox{\boldmath{$T$}}}}
+\newcommand{\bfmU}{{\mbox{\boldmath{$U$}}}}
+\newcommand{\bfmV}{{\mbox{\boldmath{$V$}}}}
+\newcommand{\bfmW}{{\mbox{\boldmath{$W$}}}}
+\newcommand{\bfmX}{{\mbox{\boldmath{$X$}}}}
+\newcommand{\bfmY}{{\mbox{\boldmath{$Y$}}}}
+\newcommand{\bfmZ}{{\mbox{\boldmath{$Z$}}}}
+
+
+
+\usepackage[]{lineno}
+%\linenumbers
+
+
+\definecolor{myyellow}{RGB}{255, 255, 191}
+
+
+\def\bea#1\eea{\begin{align*}#1\end{align*}}
+
+\usetikzlibrary{shapes,arrows}
+\setlength{\bibsep}{0pt plus 0.3ex}
+
+%\titlespacing*{\subsection}{0pt}{1.1\baselineskip}{\baselineskip}
+%\titlespacing*{\subsubsection}[runin]{0pt}{0pt}{0pt}
+%\titleformat*{\subsubsection}[runin]{}{}{}{}[]
+    \titlespacing{\section}{0pt}{0ex}{0ex}
+    \titlespacing{\subsection}{0pt}{0ex}{0.5ex}
+    \titlespacing{\subsubsection}{0pt}{0ex}{0.5ex}
+
+
+\titleformat{\subsubsection}[runin]{\normalsize\bfseries}{\thesubsubsection}{5pt}{}
+\titleformat{\subsection}[runin]{\normalsize\bfseries}{\thesubsection}{6pt}{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Margins
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\evensidemargin -0.5in
+\oddsidemargin -0.5in
+\topmargin -0.7in
+\headsep 0.0in
+\topskip 0in
+\textwidth 7.5in
+\textheight 10in
+\footskip 0.25in
+
+\changebarsep 1em
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Header and Footer
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{empty}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Arial Font
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\rmdefault}{phv}\renewcommand{\sfdefault}{phv}
+
+% Turnstile
+\newcommand*\Subsststile[2]{%
+  \,\scalebox{0.8}[0.5]{$\sststile[ss]{\textstyle#1}{\textstyle#2}$}\,
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Grant title "Ultra-high precision image-guided incisionless transcranial ultrasound surgery"
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+% User Defined Commands
+\newcommand{\exvivo}{\textit{ex vivo}}
+\newcommand{\invivo}{\textit{in vivo}}
+\newcommand{\invitro}{\textit{in vitro}}
+\newcommand{\degrees}{\ensuremath{^\circ}C}
+\newcommand{\degree}{\ensuremath{^\circ}}
+% Convert emphasis command back to italics due to ulem package
+\renewcommand{\em}{\itshape}
+\renewcommand{\emph}{\textit}
+\renewcommand{\thesection}{\Alph{section}}
+
+
+\begin{center}
+\textbf{SPECIFIC AIMS}
+\end{center}
+
+Stroke remains a leading cause of death and disability in the U.S. with nearly \textbf{800,000} new or recurrent cases annually. Rapid identification and intervention are critical as the primary approach to reduce neuronal loss. The detection of the location, nature, and severity of the stroke is required to determine the appropriate intervention (e.g. ischemic vs hemorrhagic stroke). Thus, even though neuroimaging techniques, such as CT and magnetic resonance imaging, are costly and lack portability, substantial efforts have been dedicated to further improving these tools for stroke-specific applications as they are a valuable and indispensable part of the clinical decision process.
+
+Therapeutic interventions for ischemic stroke are dominated by two interventions. Intravenous thrombolysis using tissue plasminogen activator (tPA)  administered intravenously is highly effective within a 4-5 hour window even though it carries systemic bleeding risks.  Endovascular thrombectomy (EVT), is also highly effective for large-vessel occlusions and requires on catheter-based intervention. Nevertheless, a majority of patients, $\sim$\textbf{500,000 in the U.S., are untreated} because both options are constrained due to: time windows, contraindications to tPA, no access to thrombectomy centers, or the stroke location is not accessible to EVT.
+
+Advancements in diagnostic imaging capabilities must be matched by therapeutic interventions to be effective. However, a critical barrier remains: there is no integrated platform that combines high-resolution diagnostic imaging with targeted ultrasound therapy for stroke. Furthermore, there is a critical need for this technology to be portable, non-invasive, and real-time  so that it can be widely deployed and used fast when it is needed. The objective of this proposal is to provide an integrated solution that quantitatively images the brain neurovasculature and its hemodynamics with unprecedented resolution to then guide non-invasive therapeutic interventions that bridge the gap between systemic and invasive approaches.
+
+Ultrasound offers a unique, integrated solution. Recent advances in transcranial functional ultrasound imaging (fUSI) and transcranial super-resolution ultrasound imaging (SRUS) enable unprecedented sensitivity and spatial resolution for detecting hemodynamic and vascular changes deep within the brain. Our preliminary studies demonstrate that volumetric fUSI can map neural activity transcranially, while SRUS resolves microvascular architecture beyond the diffraction limit. Separately, sonothrombolysis—the use of ultrasound to mechanically and biologically disrupt clots—has shown promise for ischemic stroke therapy. 
+
+
+%Our central hypothesis is that volumetric functional and super-resolution ultrasound can non-invasively and transcranially detect, localize, and characterize stroke, and that this diagnostic capability can be seamlessly integrated with therapeutic sonothrombolysis to enable targeted, high-precision, image-guided intervention. This work will establish a first-of-its-kind theranostic ultrasound platform for stroke.
+
+%Ultrasound offers a unique integrated solution. Recent advacements 
+
+
+
+In this application, UNC-Chapel Hill *** will collaborate to develop non-invasive transcranial volumetric super-resolution imaging, targeted contrast agents, and image-guided sonothrombolysis.  Our proposal focuses on combining these techniques to resolve the persistent challenges of a) identifying stroke location and severity b) targeting vessels and microvessels with sonothrombolysis. Advancements in imaging resolution (10 $\mu$m) will be matched by the co-registered sonothrombolysis beams (750 $\mu$m diameter, 50 $\mu$m positional accuracy).  The real-time ability to simultaneously image large volumes at depth within the brain while delivering ultrasound sonothrombolysis should allow for better targeting and correction acosutic dose based on feedback from hemodynamic/flow restoration.
+
+This project will address several challenges in combining focused ultrasound therapy with non-invasive transcranial volumetric super-resolution imaging and contrast agent targeting of thrombi in the brain.  New ultrasound array designs combined with super-harmonic sequences will enable the thrombolytic contrast agents  A programmable ultrasound scanner platform will control both the proposed therapy array and a 3D imaging array which will allow high-precision volumetric targeting and monitoring as well as enabling sophisticated feedback between imaging and therapy beams. 
+
+
+Our aims are to:
+
+\textbf{Specific Aim 1:} Develop and implement volumetric non-invasive transcranial contrast-enhanced super-resolution dual frequency imaging methods that detects stroke, quantitatively characterize the microvascular environment with 10-micron accuracy at depth. Design super-resolution imaging approaches to detect stationary and free-flowing contrast agents with custom dual-frequency arrays. Imaging and therapy will be characterized in \textit{in vivo} in small and large animals.
+
+\textbf{Specific Aim 2:} 
+To develop therapeutic sonothrombolysis for image-guided treatment of stroke. We will develop a combined ultrasound system that delivers both imaging and therapeutic beams through the intact skull. Using rodent stroke models, we will evaluate the ability of real-time imaging to localize clots, guide focal delivery of sonothrombolysis, and monitor therapeutic efficacy.
+
+
+\textbf{Specific Aim 3:} Translational evaluation of integrated imaging and therapy using validated simulations and human skull phantoms. We will use validated Fullwave~2 simulation tools, human skull phantoms, and calibrated \textit{in vivo} data from the rodent stroke model to create digital acoustic human models that predict imaging and therapeutic performance at human scale, establishing feasibility for clinical translation without requiring large animal experimentation.
+
+
+\pagebreak 
+
+
+
+
+
+
+\pagebreak
+
+\newpage
+\begin{center}
+\textbf{RESEARCH STRATEGY}
+\end{center}
+\vspace{-3mm}
+\section{Significance}
+\input{significance.tex}
+\section{Innovation}
+\input{innovation.tex}
+\section{Approach}
+\input{approach.tex}
+
+
+
+\pagebreak
+% Redefine title of publications section to be nothing
+%\bibliographystyle{apsrev4-1}
+\bibliographystyle{unsrt}
+\bibliography{general}
+\renewcommand{\refname}{}
+
+
+
+
+\end{document}
+
